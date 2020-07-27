@@ -42,6 +42,6 @@ llvmEnv:
 	echo 'export LLVM_OBJ_DIR=${BASE_DIR}/llvm-objects' >> llvmEnv &&\
 	echo 'export LLVM_OBJ_ROOT=${BASE_DIR}/llvm-objects' >> llvmEnv &&\
 	echo 'export LLVM_INSTALL_DIR=${BASE_DIR}/llvm-install' >> llvmEnv &&\
-	echo 'export PATH=$$LLVM_INSTALL_DIR/bin:$$PATH' >> llvmEnv &&\
+	echo 'export PATH=${BASE_DIR}/llvm-install/bin:$$PATH' >> llvmEnv &&\
 	echo "source ${BASE_DIR}/llvmEnv" >> ~/.bashrc
 
