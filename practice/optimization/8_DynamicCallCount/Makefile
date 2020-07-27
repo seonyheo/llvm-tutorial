@@ -3,6 +3,6 @@ SOURCES=DynamicCallCount.cpp
 
 PASSNAME=dyn-call-count
 TEST=test
-TEST_LIB_FLAG=../runtime/callCount.o -lstdc++
+TEST_LIB_FLAG=../Runtime/callCount.o -lstdc++
 
 include ../../Makefile.common
