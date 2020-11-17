@@ -31,7 +31,7 @@ build:
 	$("- Build llvm")
 	mkdir -p llvm-objects && \
 	cd llvm-objects && \
-	cmake ../llvm && \
+	cmake -DCMAKE_BUILD_TYPE=Release ../llvm && \
 	make && \
 	cmake -DCMAKE_INSTALL_PREFIX=../llvm-install/ -P cmake_install.cmake
 
